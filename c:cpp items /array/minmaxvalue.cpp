@@ -3,26 +3,26 @@ using namespace std;
 int main()
 {
     int arr[5] = {2, 3, 1, 7, 0};
-    int ans = INT_MAX;
+    int min = arr[0];
     // Min value
     for(int i = 0; i < 5; i++)
     {
-        if(arr[i] < ans)
+        if(arr[i] < min)
         {
-            ans = arr[i];
+            min = arr[i];
         }
     }
-    cout << ans << endl;
+    cout << min << endl;
     // Max value
-    ans = INT_MIN;
+    int max = arr[0];
 
     for(int i = 0; i < 5; i++)
     {
-        if(arr[i] > ans)
+        if(arr[i] > max)
         {
-            ans = arr[i];
+            max = arr[i];
         }
     }
-    cout << ans << endl;
+    cout << max << endl;
     return 0;
 }
